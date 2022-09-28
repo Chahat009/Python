@@ -1,14 +1,20 @@
 # Python
-Python Projects
+
+
 import pandas
+
 leaves = pandas.read_csv(r'C:/Users/Generation UK&I\Documents/VIEW.csv')
+
 print(leaves)
 
 from matplotlib import pyplot as plt
+
 plt.barh(leaves.Titles, leaves.avg_sickleaves)
 
 plt.ylabel('Job Titles')
+
 plt.xlabel('AVG Sick Leaves')
+
 plt.title('Employees Avg Sick Leaves')
 
 plt.show()
